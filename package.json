@@ -1,0 +1,43 @@
+{
+  "name": "@crpt/react-breadcrumbs",
+  "version": "0.0.1",
+  "description": "React breadcrumbs component",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "files": [
+    "css",
+    "es",
+    "lib",
+    "umd"
+  ],
+  "scripts": {
+    "build": "nwb build-react-component",
+    "clean": "nwb clean-module && nwb clean-demo",
+    "start": "nwb serve-react-demo",
+    "test": "nwb test-react",
+    "test:coverage": "nwb test-react --coverage",
+    "test:watch": "nwb test-react --server"
+  },
+  "dependencies": {
+    "prop-types": "^15.6.1",
+    "styled-components": "1.4.6 - 3"
+  },
+  "peerDependencies": {
+    "react": "16.x"
+  },
+  "devDependencies": {
+    "nwb": "0.21.x",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0"
+  },
+  "contributors": [
+    "Nikita Solomennikov",
+    "Alexander Berezovsky"
+  ],
+  "homepage": "https://github.com/crptteam/react-breadcrumbs",
+  "license": "MIT",
+  "repository": "https://github.com/crptteam/react-breadcrumbs",
+  "keywords": [
+    "react-component"
+  ]
+}
