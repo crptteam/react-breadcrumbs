@@ -84,7 +84,7 @@ Breadcrumbs.propTypes = {
 
 Breadcrumbs.defaultProps = {
   breadcrumbs: [],
-  withCustomLinks: false,
+  withCustomLinks: true,
   theme: defaultTheme
 };
 

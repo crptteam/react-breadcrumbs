@@ -1,0 +1,188 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Breadcrumbs Should renders without problems 1`] = `
+<BreacrumbsWrap
+  breadcrumbs={
+    Array [
+      Object {
+        "href": "index",
+        "id": 1,
+        "title": "Главная",
+      },
+      Object {
+        "href": "catalog",
+        "id": 2,
+        "title": "Претензии",
+      },
+      Object {
+        "href": "catalog-item",
+        "id": 3,
+        "title": "Претензия #445612",
+      },
+    ]
+  }
+  theme={
+    Object {
+      "height": "24px",
+      "lastBreadcrumb": Object {
+        "disabled": Object {
+          "color": "#212C42",
+        },
+        "fontSize": "16px",
+        "fontWeight": 200,
+        "lineHeight": "24px",
+        "main": Object {
+          "color": "#212C42",
+        },
+      },
+      "link": Object {
+        "disabled": Object {
+          "color": "#ABADB6",
+          "textDecoration": "none",
+        },
+        "fontSize": "16px",
+        "fontWeight": 200,
+        "lineHeight": "24px",
+        "main": Object {
+          "color": "#ABADB6",
+          "textDecoration": "none",
+        },
+        "marginRight": "13px",
+      },
+    }
+  }
+  withCustomLinks={false}
+>
+  <BreadcrumbLink
+    href="/index"
+    key="0"
+    onClick={[Function]}
+    theme={
+      Object {
+        "height": "24px",
+        "lastBreadcrumb": Object {
+          "disabled": Object {
+            "color": "#212C42",
+          },
+          "fontSize": "16px",
+          "fontWeight": 200,
+          "lineHeight": "24px",
+          "main": Object {
+            "color": "#212C42",
+          },
+        },
+        "link": Object {
+          "disabled": Object {
+            "color": "#ABADB6",
+            "textDecoration": "none",
+          },
+          "fontSize": "16px",
+          "fontWeight": 200,
+          "lineHeight": "24px",
+          "main": Object {
+            "color": "#ABADB6",
+            "textDecoration": "none",
+          },
+          "marginRight": "13px",
+        },
+      }
+    }
+  >
+    Главная
+  </BreadcrumbLink>
+  <BreadcrumbDivider
+    key="1"
+  >
+    <BreadcrumbRightArrow
+      fill="#ABADB6"
+      height="10"
+      viewBox="0 0 6 10"
+      width="6"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+  </BreadcrumbDivider>
+  <BreadcrumbLink
+    href="index/catalog"
+    key="2"
+    onClick={[Function]}
+    theme={
+      Object {
+        "height": "24px",
+        "lastBreadcrumb": Object {
+          "disabled": Object {
+            "color": "#212C42",
+          },
+          "fontSize": "16px",
+          "fontWeight": 200,
+          "lineHeight": "24px",
+          "main": Object {
+            "color": "#212C42",
+          },
+        },
+        "link": Object {
+          "disabled": Object {
+            "color": "#ABADB6",
+            "textDecoration": "none",
+          },
+          "fontSize": "16px",
+          "fontWeight": 200,
+          "lineHeight": "24px",
+          "main": Object {
+            "color": "#ABADB6",
+            "textDecoration": "none",
+          },
+          "marginRight": "13px",
+        },
+      }
+    }
+  >
+    Претензии
+  </BreadcrumbLink>
+  <BreadcrumbDivider
+    key="3"
+  >
+    <BreadcrumbRightArrow
+      fill="#ABADB6"
+      height="10"
+      viewBox="0 0 6 10"
+      width="6"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+  </BreadcrumbDivider>
+  <LastBreadcrumb
+    key="4"
+    theme={
+      Object {
+        "height": "24px",
+        "lastBreadcrumb": Object {
+          "disabled": Object {
+            "color": "#212C42",
+          },
+          "fontSize": "16px",
+          "fontWeight": 200,
+          "lineHeight": "24px",
+          "main": Object {
+            "color": "#212C42",
+          },
+        },
+        "link": Object {
+          "disabled": Object {
+            "color": "#ABADB6",
+            "textDecoration": "none",
+          },
+          "fontSize": "16px",
+          "fontWeight": 200,
+          "lineHeight": "24px",
+          "main": Object {
+            "color": "#ABADB6",
+            "textDecoration": "none",
+          },
+          "marginRight": "13px",
+        },
+      }
+    }
+  >
+    Претензия #445612
+  </LastBreadcrumb>
+</BreacrumbsWrap>
+`;
