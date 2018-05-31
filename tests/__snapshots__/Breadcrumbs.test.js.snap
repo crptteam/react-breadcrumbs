@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Breadcrumbs Should renders without problems 1`] = `
-<BreacrumbsWrap
+<Breadcrumbs
   breadcrumbs={
     Array [
       Object {
@@ -51,12 +51,28 @@ exports[`Breadcrumbs Should renders without problems 1`] = `
       },
     }
   }
-  withCustomLinks={false}
+  withCustomLinks={true}
 >
-  <BreadcrumbLink
-    href="/index"
-    key="0"
-    onClick={[Function]}
+  <BreacrumbsWrap
+    breadcrumbs={
+      Array [
+        Object {
+          "href": "index",
+          "id": 1,
+          "title": "Главная",
+        },
+        Object {
+          "href": "catalog",
+          "id": 2,
+          "title": "Претензии",
+        },
+        Object {
+          "href": "catalog-item",
+          "id": 3,
+          "title": "Претензия #445612",
+        },
+      ]
+    }
     theme={
       Object {
         "height": "24px",
@@ -87,102 +103,388 @@ exports[`Breadcrumbs Should renders without problems 1`] = `
         },
       }
     }
+    withCustomLinks={true}
   >
-    Главная
-  </BreadcrumbLink>
-  <BreadcrumbDivider
-    key="1"
-  >
-    <BreadcrumbRightArrow
-      fill="#ABADB6"
-      height="10"
-      viewBox="0 0 6 10"
-      width="6"
-      xmlns="http://www.w3.org/2000/svg"
-    />
-  </BreadcrumbDivider>
-  <BreadcrumbLink
-    href="index/catalog"
-    key="2"
-    onClick={[Function]}
-    theme={
-      Object {
-        "height": "24px",
-        "lastBreadcrumb": Object {
-          "disabled": Object {
-            "color": "#212C42",
+    <BreadcrumbsWrap__Elem
+      breadcrumbs={
+        Array [
+          Object {
+            "href": "index",
+            "id": 1,
+            "title": "Главная",
           },
-          "fontSize": "16px",
-          "fontWeight": 200,
-          "lineHeight": "24px",
-          "main": Object {
-            "color": "#212C42",
+          Object {
+            "href": "catalog",
+            "id": 2,
+            "title": "Претензии",
           },
-        },
-        "link": Object {
-          "disabled": Object {
-            "color": "#ABADB6",
-            "textDecoration": "none",
+          Object {
+            "href": "catalog-item",
+            "id": 3,
+            "title": "Претензия #445612",
           },
-          "fontSize": "16px",
-          "fontWeight": 200,
-          "lineHeight": "24px",
-          "main": Object {
-            "color": "#ABADB6",
-            "textDecoration": "none",
-          },
-          "marginRight": "13px",
-        },
+        ]
       }
-    }
-  >
-    Претензии
-  </BreadcrumbLink>
-  <BreadcrumbDivider
-    key="3"
-  >
-    <BreadcrumbRightArrow
-      fill="#ABADB6"
-      height="10"
-      viewBox="0 0 6 10"
-      width="6"
-      xmlns="http://www.w3.org/2000/svg"
-    />
-  </BreadcrumbDivider>
-  <LastBreadcrumb
-    key="4"
-    theme={
-      Object {
-        "height": "24px",
-        "lastBreadcrumb": Object {
-          "disabled": Object {
-            "color": "#212C42",
+      theme={
+        Object {
+          "height": "24px",
+          "lastBreadcrumb": Object {
+            "disabled": Object {
+              "color": "#212C42",
+            },
+            "fontSize": "16px",
+            "fontWeight": 200,
+            "lineHeight": "24px",
+            "main": Object {
+              "color": "#212C42",
+            },
           },
-          "fontSize": "16px",
-          "fontWeight": 200,
-          "lineHeight": "24px",
-          "main": Object {
-            "color": "#212C42",
+          "link": Object {
+            "disabled": Object {
+              "color": "#ABADB6",
+              "textDecoration": "none",
+            },
+            "fontSize": "16px",
+            "fontWeight": 200,
+            "lineHeight": "24px",
+            "main": Object {
+              "color": "#ABADB6",
+              "textDecoration": "none",
+            },
+            "marginRight": "13px",
           },
-        },
-        "link": Object {
-          "disabled": Object {
-            "color": "#ABADB6",
-            "textDecoration": "none",
-          },
-          "fontSize": "16px",
-          "fontWeight": 200,
-          "lineHeight": "24px",
-          "main": Object {
-            "color": "#ABADB6",
-            "textDecoration": "none",
-          },
-          "marginRight": "13px",
-        },
+        }
       }
-    }
-  >
-    Претензия #445612
-  </LastBreadcrumb>
-</BreacrumbsWrap>
+      withCustomLinks={true}
+    >
+      <div
+        className="BreadcrumbsWrap__Elem-eLraGU cxwwTh"
+      >
+        <BreadcrumbLink
+          href="/index"
+          key="0"
+          onClick={[Function]}
+          theme={
+            Object {
+              "height": "24px",
+              "lastBreadcrumb": Object {
+                "disabled": Object {
+                  "color": "#212C42",
+                },
+                "fontSize": "16px",
+                "fontWeight": 200,
+                "lineHeight": "24px",
+                "main": Object {
+                  "color": "#212C42",
+                },
+              },
+              "link": Object {
+                "disabled": Object {
+                  "color": "#ABADB6",
+                  "textDecoration": "none",
+                },
+                "fontSize": "16px",
+                "fontWeight": 200,
+                "lineHeight": "24px",
+                "main": Object {
+                  "color": "#ABADB6",
+                  "textDecoration": "none",
+                },
+                "marginRight": "13px",
+              },
+            }
+          }
+        >
+          <BreadcrumbLink__Elem
+            color="#ABADB6"
+            fontSize="16px"
+            fontWeight={200}
+            height="24px"
+            href="/index"
+            lineHeight="24px"
+            marginRight="13px"
+            onClick={[Function]}
+            textDecoration="none"
+            theme={
+              Object {
+                "height": "24px",
+                "lastBreadcrumb": Object {
+                  "disabled": Object {
+                    "color": "#212C42",
+                  },
+                  "fontSize": "16px",
+                  "fontWeight": 200,
+                  "lineHeight": "24px",
+                  "main": Object {
+                    "color": "#212C42",
+                  },
+                },
+                "link": Object {
+                  "disabled": Object {
+                    "color": "#ABADB6",
+                    "textDecoration": "none",
+                  },
+                  "fontSize": "16px",
+                  "fontWeight": 200,
+                  "lineHeight": "24px",
+                  "main": Object {
+                    "color": "#ABADB6",
+                    "textDecoration": "none",
+                  },
+                  "marginRight": "13px",
+                },
+              }
+            }
+          >
+            <a
+              className="BreadcrumbLink__Elem-gsLizJ evhHmw"
+              color="#ABADB6"
+              fontSize="16px"
+              fontWeight={200}
+              height="24px"
+              href="/index"
+              onClick={[Function]}
+              textDecoration="none"
+            >
+              Главная
+            </a>
+          </BreadcrumbLink__Elem>
+        </BreadcrumbLink>
+        <BreadcrumbDivider
+          key="1"
+        >
+          <BreadcrumbDivider__Elem>
+            <div
+              className="BreadcrumbDivider__Elem-kXfiuz bXxMHU"
+            >
+              <BreadcrumbRightArrow
+                fill="#ABADB6"
+                height="10"
+                viewBox="0 0 6 10"
+                width="6"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <svg
+                  fill="#ABADB6"
+                  height="10"
+                  viewBox="0 0 6 10"
+                  width="6"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clipRule="evenodd"
+                    d="M1.887.331a1.087 1.087 0 0 0-1.563 0 1.145 1.145 0 0 0 0 1.596l3.008 3.074L.324 8.073a1.145 1.145 0 0 0 0 1.596c.432.441 1.13.441 1.563 0l3.79-3.87A1.14 1.14 0 0 0 6 5c0-.29-.108-.578-.324-.799L1.886.332z"
+                    fillRule="evenodd"
+                  />
+                </svg>
+              </BreadcrumbRightArrow>
+            </div>
+          </BreadcrumbDivider__Elem>
+        </BreadcrumbDivider>
+        <BreadcrumbLink
+          href="index/catalog"
+          key="2"
+          onClick={[Function]}
+          theme={
+            Object {
+              "height": "24px",
+              "lastBreadcrumb": Object {
+                "disabled": Object {
+                  "color": "#212C42",
+                },
+                "fontSize": "16px",
+                "fontWeight": 200,
+                "lineHeight": "24px",
+                "main": Object {
+                  "color": "#212C42",
+                },
+              },
+              "link": Object {
+                "disabled": Object {
+                  "color": "#ABADB6",
+                  "textDecoration": "none",
+                },
+                "fontSize": "16px",
+                "fontWeight": 200,
+                "lineHeight": "24px",
+                "main": Object {
+                  "color": "#ABADB6",
+                  "textDecoration": "none",
+                },
+                "marginRight": "13px",
+              },
+            }
+          }
+        >
+          <BreadcrumbLink__Elem
+            color="#ABADB6"
+            fontSize="16px"
+            fontWeight={200}
+            height="24px"
+            href="index/catalog"
+            lineHeight="24px"
+            marginRight="13px"
+            onClick={[Function]}
+            textDecoration="none"
+            theme={
+              Object {
+                "height": "24px",
+                "lastBreadcrumb": Object {
+                  "disabled": Object {
+                    "color": "#212C42",
+                  },
+                  "fontSize": "16px",
+                  "fontWeight": 200,
+                  "lineHeight": "24px",
+                  "main": Object {
+                    "color": "#212C42",
+                  },
+                },
+                "link": Object {
+                  "disabled": Object {
+                    "color": "#ABADB6",
+                    "textDecoration": "none",
+                  },
+                  "fontSize": "16px",
+                  "fontWeight": 200,
+                  "lineHeight": "24px",
+                  "main": Object {
+                    "color": "#ABADB6",
+                    "textDecoration": "none",
+                  },
+                  "marginRight": "13px",
+                },
+              }
+            }
+          >
+            <a
+              className="BreadcrumbLink__Elem-gsLizJ evhHmw"
+              color="#ABADB6"
+              fontSize="16px"
+              fontWeight={200}
+              height="24px"
+              href="index/catalog"
+              onClick={[Function]}
+              textDecoration="none"
+            >
+              Претензии
+            </a>
+          </BreadcrumbLink__Elem>
+        </BreadcrumbLink>
+        <BreadcrumbDivider
+          key="3"
+        >
+          <BreadcrumbDivider__Elem>
+            <div
+              className="BreadcrumbDivider__Elem-kXfiuz bXxMHU"
+            >
+              <BreadcrumbRightArrow
+                fill="#ABADB6"
+                height="10"
+                viewBox="0 0 6 10"
+                width="6"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <svg
+                  fill="#ABADB6"
+                  height="10"
+                  viewBox="0 0 6 10"
+                  width="6"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clipRule="evenodd"
+                    d="M1.887.331a1.087 1.087 0 0 0-1.563 0 1.145 1.145 0 0 0 0 1.596l3.008 3.074L.324 8.073a1.145 1.145 0 0 0 0 1.596c.432.441 1.13.441 1.563 0l3.79-3.87A1.14 1.14 0 0 0 6 5c0-.29-.108-.578-.324-.799L1.886.332z"
+                    fillRule="evenodd"
+                  />
+                </svg>
+              </BreadcrumbRightArrow>
+            </div>
+          </BreadcrumbDivider__Elem>
+        </BreadcrumbDivider>
+        <LastBreadcrumb
+          key="4"
+          theme={
+            Object {
+              "height": "24px",
+              "lastBreadcrumb": Object {
+                "disabled": Object {
+                  "color": "#212C42",
+                },
+                "fontSize": "16px",
+                "fontWeight": 200,
+                "lineHeight": "24px",
+                "main": Object {
+                  "color": "#212C42",
+                },
+              },
+              "link": Object {
+                "disabled": Object {
+                  "color": "#ABADB6",
+                  "textDecoration": "none",
+                },
+                "fontSize": "16px",
+                "fontWeight": 200,
+                "lineHeight": "24px",
+                "main": Object {
+                  "color": "#ABADB6",
+                  "textDecoration": "none",
+                },
+                "marginRight": "13px",
+              },
+            }
+          }
+        >
+          <LastBreadcrumb__Elem
+            color="#212C42"
+            fontSize="16px"
+            fontWeight={200}
+            height="24px"
+            lineHeight="24px"
+            theme={
+              Object {
+                "height": "24px",
+                "lastBreadcrumb": Object {
+                  "disabled": Object {
+                    "color": "#212C42",
+                  },
+                  "fontSize": "16px",
+                  "fontWeight": 200,
+                  "lineHeight": "24px",
+                  "main": Object {
+                    "color": "#212C42",
+                  },
+                },
+                "link": Object {
+                  "disabled": Object {
+                    "color": "#ABADB6",
+                    "textDecoration": "none",
+                  },
+                  "fontSize": "16px",
+                  "fontWeight": 200,
+                  "lineHeight": "24px",
+                  "main": Object {
+                    "color": "#ABADB6",
+                    "textDecoration": "none",
+                  },
+                  "marginRight": "13px",
+                },
+              }
+            }
+          >
+            <span
+              className="LastBreadcrumb__Elem-dqAXLR ezpvPa"
+              color="#212C42"
+              fontSize="16px"
+              fontWeight={200}
+              height="24px"
+            >
+              Претензия #445612
+            </span>
+          </LastBreadcrumb__Elem>
+        </LastBreadcrumb>
+      </div>
+    </BreadcrumbsWrap__Elem>
+  </BreacrumbsWrap>
+</Breadcrumbs>
 `;

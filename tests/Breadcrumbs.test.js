@@ -1,11 +1,12 @@
 import React from "react";
 import { Breadcrumbs } from "../src/";
+import { mount } from 'enzyme';
 
 describe("Breadcrumbs", () => {
 
   it("Should renders without problems", () => {
 
-    const wrapper = shallow(
+    const wrapper = mount(
       <Breadcrumbs breadcrumbs={[
         {
           href: "index",
