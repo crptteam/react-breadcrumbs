@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 
+import { withTheme } from "styled-components";
+
 import BreadcrumbsWrap from "../styled/BreadcrumbsWrap";
 import BreadcrumbLink from "../styled/BreadcrumbLink";
 import LastBreadcrumb from "../styled/LastBreadcrumb";
@@ -88,4 +90,4 @@ Breadcrumbs.defaultProps = {
   theme: defaultTheme
 };
 
-export default Breadcrumbs;
+export default withTheme(Breadcrumbs);
