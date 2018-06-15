@@ -1,6 +1,6 @@
 {
   "name": "@crpt/react-breadcrumbs",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "React breadcrumbs component",
   "main": "lib/index.js",
   "module": "es/index.js",
