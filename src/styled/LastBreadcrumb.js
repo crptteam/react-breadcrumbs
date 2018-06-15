@@ -17,10 +17,16 @@ const Elem = styled.span`
 
 const LastBreadcrumb = props => {
 
-  const theme = getThemeAsPlainTextByKeys(props.theme || defaultTheme);
+  const merged = Object.assign(
+    {},
+    defaultTheme.Breadcrumbs,
+    props.theme && props.theme.Breadcrumbs ? props.theme.Breadcrumbs : {}
+  );
+
+  const theme = getThemeAsPlainTextByKeys(merged);
 
   Object.assign(theme, getThemeAsPlainTextByKeys(
-    props.theme && props.theme.lastBreadcrumb || defaultTheme.lastBreadcrumb,
+    merged.lastBreadcrumb,
     props.disabled ? 'disabled' : 'main'
   ));
 

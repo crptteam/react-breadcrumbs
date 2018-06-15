@@ -19,10 +19,16 @@ const Elem = styled.a`
 
 const BreadcrumbLink = props => {
 
-  const theme = getThemeAsPlainTextByKeys(props.theme || defaultTheme);
+  const merged = Object.assign(
+    {},
+    defaultTheme.Breadcrumbs,
+    props.theme && props.theme.Breadcrumbs ? props.theme.Breadcrumbs : {}
+  );
+
+  const theme = getThemeAsPlainTextByKeys(merged);
 
   Object.assign(theme, getThemeAsPlainTextByKeys(
-    props.theme && props.theme.link || defaultTheme.link,
+    merged.link,
     props.disabled ? 'disabled' : 'main'
   ));
 
