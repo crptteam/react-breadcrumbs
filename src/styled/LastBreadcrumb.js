@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { getThemeAsPlainTextByKeys } from '../utils';
+import { getThemeAsPlainTextByKeys, innerMerge } from '../utils';
 
 import { defaultTheme } from '../theme/';
 
@@ -17,7 +17,7 @@ const Elem = styled.span`
 
 const LastBreadcrumb = props => {
 
-  const merged = Object.assign(
+  const merged = innerMerge(
     {},
     defaultTheme.Breadcrumbs,
     props.theme && props.theme.Breadcrumbs ? props.theme.Breadcrumbs : {}
