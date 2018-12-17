@@ -1,8 +1,10 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const Elem = styled.div`
-  white-space: nowrap;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
 `;
 
 const BreacrumbsWrap = props => {

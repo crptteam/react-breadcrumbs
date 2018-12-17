@@ -1,9 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
-import { getThemeAsPlainTextByKeys, innerMerge } from '../utils';
+import { getThemeAsPlainTextByKeys, innerMerge } from "../utils";
 
-import { defaultTheme } from '../theme/';
+import { defaultTheme } from "../theme/";
 
 const Elem = styled.span`
   line-height: ${props => props.lineHeight};
@@ -13,10 +13,16 @@ const Elem = styled.span`
   display: inline-block;
   height: ${props => props.height};
   font-weight: ${props => props.fontWeight};
+  ${props => {
+    return props.wrap ? '' : `max-width: ${props => (props.width ? props.width + "px" : "")};
+            width: ${props => (props.width ? props.width + "px" : "")};
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;`;
+  }};
 `;
 
 const LastBreadcrumb = props => {
-
   const merged = innerMerge(
     {},
     defaultTheme.Breadcrumbs,
@@ -25,12 +31,15 @@ const LastBreadcrumb = props => {
 
   const theme = getThemeAsPlainTextByKeys(merged);
 
-  Object.assign(theme, getThemeAsPlainTextByKeys(
-    merged.lastBreadcrumb,
-    props.disabled ? 'disabled' : 'main'
-  ));
+  Object.assign(
+    theme,
+    getThemeAsPlainTextByKeys(
+      merged.lastBreadcrumb,
+      props.disabled ? "disabled" : "main"
+    )
+  );
 
-  return <Elem {...theme} {...props}  />;
+  return <Elem {...theme} {...props} />;
 };
 
 export default LastBreadcrumb;
